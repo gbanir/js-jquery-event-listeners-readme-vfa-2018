@@ -23,13 +23,13 @@ function getIt () {
   } 
   
   function frameIt () { 
-    $('img').on('load', function(load)
-    { if($('img').class=="tasty") { 
-    'img'.style.borderColor="red"; 
-    }
-    }); 
+    $('img').on('load', function(){
+      $('img').addClass("tasty"); 
+    });
     return; 
-    } 
+  } 
+  
+    
   
 
 
