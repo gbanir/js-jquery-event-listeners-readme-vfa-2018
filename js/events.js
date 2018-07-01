@@ -1,26 +1,34 @@
-//define functions here
-var getIt=$('p').on('click', function () { 
-  alert("Hey!") 
+function pressIt () { 
+  $('form').on('keydown', function (key)
+  {if(key.which==71) {
+    alert('You have pressed they "g" key!'); 
+  }
+  }); 
   return; 
-}) 
+} 
 
-var frameIt=$('img').on('load', 
-function() {
-  add('.tasty'); 
-  img.style.bordercolor='red';
-})
+function getIt () { 
+  $('p').on('click', function(click)
+  { alert('Hey!'); 
+  } 
+  ); 
+  return; 
+  } 
+  
+  function submitIt () { 
+    $("form").on("submit", function(submit)
+    { alert("Your form is going to be submitted now."); 
+    }); 
+    return; 
+  } 
+  
+  function frameIt () { 
+    $('img').on('load', function(load)
+    { if($('img').class=="tasty") { 
+    'img'.style.borderColor="red"; 
+    }
+    }); 
+    return; 
+    } 
 
-$(document).ready(function(){
-
-// call functions here
-
-});
-
-getIt.on('click') 
-
-$('img').on('load', 
-function() {
-  add('.tasty'); 
-  img.style.bordercolor='red';
-})
 
